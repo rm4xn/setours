@@ -57,6 +57,11 @@
                 TxtTotal.Text
             )
         End If
+
+        ' Insertar detalles
+
+        'Dim detalleDeComprobante As New DetalleDeComprobante
+
         Form1.CargarComprobantes()
         Close()
     End Sub

@@ -11,8 +11,6 @@
 
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
         Agregar.id = 0
-        Panel1.Enabled = True
-        Panel2.Enabled = True
         Agregar.ShowDialog()
     End Sub
 
@@ -28,15 +26,11 @@
 
     Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtnEdit.Click
         Agregar.id = DataGridView1.CurrentRow.Cells("DgvColCodigo").Value
-        Panel1.Enabled = True
-        Panel2.Enabled = True
         Agregar.ShowDialog()
     End Sub
 
     Private Sub BtnConsult_Click(sender As Object, e As EventArgs) Handles BtnConsult.Click
         Agregar.id = DataGridView1.CurrentRow.Cells("DgvColCodigo").Value
-        Panel1.Enabled = False
-        Panel2.Enabled = False
         Agregar.ShowDialog()
     End Sub
 End Class
