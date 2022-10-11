@@ -36,13 +36,13 @@ Partial Class Agregar
         Me.CboCliente = New System.Windows.Forms.ComboBox()
         Me.CboTipo = New System.Windows.Forms.ComboBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TxtNeto = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.DgvColProducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DgvColPrecio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DgvColCantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtNeto = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,22 +50,25 @@ Partial Class Agregar
         '
         'TxtTotal
         '
-        Me.TxtTotal.Location = New System.Drawing.Point(663, 51)
+        Me.TxtTotal.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtTotal.Location = New System.Drawing.Point(427, 51)
         Me.TxtTotal.Name = "TxtTotal"
         Me.TxtTotal.Size = New System.Drawing.Size(125, 27)
         Me.TxtTotal.TabIndex = 1
         '
         'TxtIgv
         '
-        Me.TxtIgv.Location = New System.Drawing.Point(484, 51)
+        Me.TxtIgv.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtIgv.Location = New System.Drawing.Point(248, 51)
         Me.TxtIgv.Name = "TxtIgv"
         Me.TxtIgv.Size = New System.Drawing.Size(125, 27)
         Me.TxtIgv.TabIndex = 2
         '
         'Label4
         '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(615, 54)
+        Me.Label4.Location = New System.Drawing.Point(379, 54)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(42, 20)
         Me.Label4.TabIndex = 16
@@ -73,8 +76,9 @@ Partial Class Agregar
         '
         'Label5
         '
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(446, 54)
+        Me.Label5.Location = New System.Drawing.Point(210, 54)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(32, 20)
         Me.Label5.TabIndex = 17
@@ -93,7 +97,7 @@ Partial Class Agregar
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 147)
+        Me.Panel1.Size = New System.Drawing.Size(568, 147)
         Me.Panel1.TabIndex = 22
         '
         'CboVendedor
@@ -176,12 +180,31 @@ Partial Class Agregar
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 488)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(800, 125)
+        Me.Panel2.Size = New System.Drawing.Size(568, 125)
         Me.Panel2.TabIndex = 24
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(31, 54)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(42, 20)
+        Me.Label2.TabIndex = 19
+        Me.Label2.Text = "Neto"
+        '
+        'TxtNeto
+        '
+        Me.TxtNeto.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtNeto.Location = New System.Drawing.Point(79, 51)
+        Me.TxtNeto.Name = "TxtNeto"
+        Me.TxtNeto.Size = New System.Drawing.Size(125, 27)
+        Me.TxtNeto.TabIndex = 18
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(694, 84)
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Location = New System.Drawing.Point(458, 84)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 29)
         Me.Button1.TabIndex = 3
@@ -197,7 +220,7 @@ Partial Class Agregar
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(800, 341)
+        Me.DataGridView1.Size = New System.Drawing.Size(568, 341)
         Me.DataGridView1.TabIndex = 25
         '
         'DgvColProducto
@@ -221,27 +244,11 @@ Partial Class Agregar
         Me.DgvColCantidad.Name = "DgvColCantidad"
         Me.DgvColCantidad.Width = 125
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(267, 54)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 20)
-        Me.Label2.TabIndex = 19
-        Me.Label2.Text = "Neto"
-        '
-        'TxtNeto
-        '
-        Me.TxtNeto.Location = New System.Drawing.Point(315, 51)
-        Me.TxtNeto.Name = "TxtNeto"
-        Me.TxtNeto.Size = New System.Drawing.Size(125, 27)
-        Me.TxtNeto.TabIndex = 18
-        '
         'Agregar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 613)
+        Me.ClientSize = New System.Drawing.Size(568, 613)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
